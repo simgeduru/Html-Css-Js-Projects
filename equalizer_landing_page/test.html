@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              black_p: "#191826",
+              orange_p: "#FA7453",
+              yellow_p: "#FFB964",
+              blue_p: "#66E2DC",
+              white_p: "#FCFAF9",
+            },
+            fontFamily: {
+              IBM: ['"IBM Plex Sans"', "sans-serif"],
+            },
+            fontSize: {
+              forh2: ["40px", "52px"],
+              forh1: ["70px", "64px"],
+              body1: ["20px", "34px"],
+              body2: ["16px", "26px"],
+            },
+            spacing: {
+              yuzde45: "45%",
+              org: "50.666667%",
+              yuzde10: "10%",
+              yuzde15: "15%",
+              yuzde30: "30%",
+              yuzde5: "7%",
+              yuzde90: "90%",
+              yuzde144: "144%",
+              yuzde83: "28%",
+              yuzde60: "60.0%",
+              yuzde27: "27.333333%",
+              yuzde26: "24%",
+              yuzde59: "59%",
+              yuzde32: "32%",
+              yuzde16: "16.0%",
+              yuzde37: "37.0%",
+              yuzde56: "80%",
+              yuzde13: "13%",
+
+              yuzde25: "25.0%",
+            },
+            screens: {
+              sm1: "375px",
+              sm2: "414px",
+              sm3: "390px",
+              sm4: "430px",
+              md1: "820px",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body class="h-full overflow-x-hidden w-full">
+    <img
+      src="icon1.png"
+      alt=""
+      class="absolute top-0 right-0 invisible md:visible w-yuzde26 h-yuzde83 z-40"
+    />
+    <img
+      src="Oval.png"
+      alt=""
+      class="absolute -top-yuzde5 -right-1/2 md:top-yuzde15 -right-40 z-20"
+    />
+    <img
+      src="Oval_Copy.png"
+      alt=""
+      class="absolute top-yuzde13 -right-1/2 md:top-yuzde32 -right-40 z-20"
+    />
+    <img src="Oval_2.png" alt="" class="absolute top-0 left-0" />
+
+    <div class="h-full">
+      <div class="flex-col flex mx-10 sm1:h-[500px] md:h-[350px] 2xl:w-[500px]">
+        <h2
+          class="font-IBM font-bold text-[40px] mt-10 mb-20 md:text-[50px] md:mb-20 lg:mb-32"
+        >
+          equalizer
+        </h2>
+        <h1
+          class="font-IBM font-bold text-[40px] md:text-[75px] md:leading-none md:mb-5 lg:mb-14"
+        >
+          We make your music sound extraordinary.
+        </h1>
+        <p
+          class="font-IBM font-normal text-body1 text-[20px] md:text-[18px] md:mb-32"
+        >
+          A system audio equalizer specifically designed for Android and iOS.
+          Freely tune the way your music sounds with a professional grade
+          parametric EQ & volume mixer. Control bass, mids, treble, gain
+          control, reverb, and more!
+        </p>
+      </div>
+
+      <div class="h-full md:flex md:justify-center md:mx-10">
+        <div
+          class="bg-black_p h-4/6 w-full mt-64 md:mt-96 flex flex-col items-center"
+        >
+          <img
+            src="Group-5 (1).png"
+            class="absolute z-40 top-full sm2:top-3/4 sm3:top-3/4 sm4:top-2/3 w-[200px] h-[430px] md:left-yuzde10 md:w-[270px] md:h-[560px] md:top-yuzde60 lg:w-[325px] lg:h-[640px] lg:top-yuzde45 lg:right-yuzde5 2xl:left-yuzde25 2xl:w-[370px] 2xl:h-[700px] 2xl:top-1/2"
+          />
+          <img src="mobilebg.png" class="absolute z-20 lg:w-[440px]" />
+        </div>
+
+        <div
+          class="row w-full h-[500px] bg-orange_p absolute z-40 sm1:-bottom-yuzde144 sm2:-bottom-yuzde83 sm3:-bottom-yuzde90 sm4:-bottom-3/4 -bottom-3/4 rounded-xl md:w-3/5 md:-bottom-yuzde45 md:right-yuzde10 md1:-bottom-1/3 md:h-[600px] md:w-[430px] lg:h-[700px] lg:w-[500px] lg:-bottom-yuzde27 lg:right-yuzde13 2xl:right-yuzde13 2xl:-bottom-yuzde56"
+        >
+          <div class="w-full flex-col py-14 gap-5 px-6 lg:gap-10">
+            <p class="font-bold text-[32px] text-white_p lg:text-[40px]">
+              Premium EQ
+            </p>
+            <p class="font-normal text-[18px] text-white_p lg:text-[20px]">
+              Get expert-level control with a robust equalizer, volume mixer,
+              and spatial audio. Take your listening experience to a whole new
+              level and access all our incredible features!
+            </p>
+            <div class="flex flex-row items-center gap-x-6">
+              <p class="font-bold text-[65px] text-white_p py-1">$4</p>
+              <p class="font-normal text-[20px] text-white_p">/ month</p>
+            </div>
+
+            <div class="flex flex-col gap-y-6 items-center">
+              <div
+                class="w-2/3 flex flex-row bg-black_p text-white_p text-[18px] rounded-md gap-x-3 py-1 justify-center"
+              >
+                <img src="Combined Shape.png" class="px-1" />
+                iOS Download
+              </div>
+
+              <div
+                class="w-2/3 flex flex-row bg-white_p text-black_p text-[18px] rounded-md gap-x-3 py-1 justify-center"
+              >
+                <img src="Combined Shape (1).png" class="px-1" />
+                Android Download
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="row mt-[300px] flex flex-col mx-5 sm1:mt-[250px] sm3:mt-[30px] md:flex-col md:mt-[160px] md:gap-10"
+      >
+        <h2 class="font-IBM font-bold text-[40px] md:text-[50px]">equalizer</h2>
+
+        <p
+          class="font-IBM font-normal text-body1 text-[20px] md:text-[16px] mb-10 md:mb-20 md:w-[350px]"
+        >
+          All rights reserved © Equalizer 2021 Have any problems? Contact us via
+          social media or email us at
+          <strong class="font-IBM font-bold text-body1 text-[20px]"
+            >equalizer@example.com</strong
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
