@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    window.addEventListener("load", () => {
+      //burada notification öğesinin varlığını kontrol edeceğiz
+      if (!window.Notification) return;
+
+      Notification.requestPermission().then(sendNotification);
+    });
+
+    const sendNotification = (permission) => {
+      let notif = new Notification("benim title", { body: "body içeriği" });
+
+      notif.onclick = () => {
+        window.location.href = "https://www.google.com/";
+      };
+
+      console.log(notif);
+    };
+  </script>
+</html>

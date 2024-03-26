@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              basker: ["Libre Baskerville", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div
+      class="flex flex-row font-basker font-normal italic mt-20 items-center space-x-8 justify-center text-[50px]"
+    >
+      <div id="gun"></div>
+      <div id="saat"></div>
+      <div id="dk"></div>
+      <div id="sn"></div>
+    </div>
+  </body>
+
+  <script>
+    const countDate = new Date("Jan 1,2025 00:00:00").getTime();
+
+    const newYear = () => {
+      const now = new Date().getTime();
+      let gap = countDate - now;
+
+      let sec = 1000;
+      let min = sec * 60;
+      let hour = min * 60;
+      let day = hour * 24;
+
+      //gun saat dakika ve saniye için matematiksel islemler
+      let d = Math.floor(gap / day);
+      let h = Math.floor((gap % day) / hour);
+      let m = Math.floor((gap % hour) / min);
+      let s = Math.floor((gap % min) / sec);
+
+      //dom manipulasyonu
+      document.getElementById("gun").innerText = d;
+      document.getElementById("saat").innerText = h;
+      document.getElementById("dk").innerText = m;
+      document.getElementById("sn").innerText = s;
+    };
+
+    //newYear fonksiyonunun her saniye çalışması için setInterval kullandık
+    setInterval(() => {
+      newYear();
+    }, 1000);
+  </script>
+</html>

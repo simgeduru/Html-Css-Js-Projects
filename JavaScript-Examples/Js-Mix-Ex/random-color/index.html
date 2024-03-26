@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      id="container"
+      class="w-full h-[500px] flex justify-center items-center"
+    >
+      <div
+        id="color"
+        class="w-[200px] h-[100px] flex justify-center items-center bg-violet-200"
+      >
+        <button
+          id="btn"
+          class="w-[80px] h-[40px] rounded-sm border-2 bg-gray-500 text-white"
+        >
+          Degistir
+        </button>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const hexArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+    const div = document.querySelector("#color");
+    const ColorChange = () => {
+      let color = "#";
+
+      for (let index = 0; index < 6; index++) {
+        let randomV = Math.floor(Math.random() * (16 - 0)) + 0;
+        color += hexArr[randomV];
+      }
+
+      div.style.backgroundColor = color;
+    };
+
+    document.querySelector("#btn").addEventListener("click", ColorChange);
+  </script>
+</html>
