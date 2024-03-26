@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              deneme: "pink",
+              prototurk: "#32445a",
+              twitter: "blue",
+            },
+            spacing: {
+              15: "3.75rem",
+            },
+            zIndex: {
+              "-1 ": "-1",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+      }
+    </style>
+  </head>
+
+  <body class="bg-white flex h-full flex-col">
+    <div
+      class="h-15 w-full border-b border-gray-100 flex justify-between items-center px-5"
+    >
+      <a
+        href="#"
+        class="text-2xl font-medium inline-flex items-center text-prototurk"
+        >./prototurk
+        <span class="text-sm text-gray-400 ml-2">v2.5.0</span>
+      </a>
+
+      <form action="" class="w-1/3">
+        <input
+          type="text"
+          placeholder="Makalelerde ara"
+          class="w-full bg-gray-100 h-10 px-3 placeholder-gray-500 rounded"
+        />
+      </form>
+
+      <a
+        href="#"
+        class="bg-prototurk text-white h-10 inline-flex items-center px-6 rounded"
+        >Giriş yap</a
+      >
+    </div>
+
+    <main class="flex-auto flex">
+      <aside
+        class="w-64 border-r p-2 border-gray-200 flex flex-col divide-solid divide-gray-100 divide-y"
+      >
+        <nav class="mb-3">
+          <a
+            href=""
+            class="flex items-center h-10 rounded px-3 text-sm text-prototurk font-medium hover:bg-gray-100 transition-colors"
+            >Anasayfa</a
+          >
+          <a
+            href=""
+            class="flex items-center h-10 rounded px-3 text-sm text-prototurk font-medium hover:bg-gray-100 transition-colors"
+            >Akış</a
+          >
+          <a
+            href=""
+            class="flex items-center h-10 rounded px-3 text-sm text-prototurk font-medium hover:bg-gray-100 transition-colors"
+            >Keşfet</a
+          >
+          <a
+            href=""
+            class="flex items-center h-10 rounded px-3 text-sm text-prototurk font-medium hover:bg-gray-100 transition-colors"
+            >Makaleler</a
+          >
+          <a
+            href=""
+            class="flex items-center h-10 rounded px-3 text-sm text-prototurk font-medium hover:bg-gray-100 transition-colors"
+            >Soru & Cevap</a
+          >
+        </nav>
+
+        <nav class="mt-3 pt-3">
+          <a
+            href=""
+            class="flex items-center h-10 rounded px-3 text-sm text-prototurk font-medium hover:bg-gray-100 transition-colors"
+            >HTML</a
+          >
+          <a
+            href=""
+            class="flex items-center h-10 rounded px-3 text-sm text-prototurk font-medium hover:bg-gray-100 transition-colors"
+            >CSS</a
+          >
+          <a
+            href=""
+            class="flex items-center h-10 rounded px-3 text-sm text-prototurk font-medium hover:bg-gray-100 transition-colors"
+            >JS</a
+          >
+          <a
+            href=""
+            class="flex items-center h-10 rounded px-3 text-sm text-prototurk font-medium hover:bg-gray-100 transition-colors"
+            >SQL</a
+          >
+          <a
+            href=""
+            class="flex items-center h-10 rounded px-3 text-sm text-prototurk font-medium hover:bg-gray-100 transition-colors"
+            >Python</a
+          >
+        </nav>
+
+        <div class="mt-auto pt-3">
+          <button
+            href=""
+            class="w-full bg-gray-500 h-10 flex items-center px-4 text-white rounded text-sm hover:bg-gray-600 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+              class="fill-current text-green-400 mr-2 mt-1"
+            >
+              <path
+                d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
+              />
+            </svg>
+            Koyu mod
+          </button>
+        </div>
+      </aside>
+
+      <section class="flex-auto py-6 px-10">
+        <div class="mx-auto max-w-screen-xl">
+          <h2
+            class="text-3xl font-semibold text-prototurk mb-3 leading-relaxed"
+          >
+            Kendine değer kat!
+          </h2>
+          <p>
+            İyi bir kariyer için doğru bir başlangıç gerekir. Prototürk'de bir
+            çok dil ve teknolojiye ait derslerle doğru bir başlangıç yapmaya
+            hazırsın!
+          </p>
+
+          <div class="grid grid-cols-10 mt-5 gap-7 mb-5">
+            <div class="col-span-2">
+              <a
+                href=""
+                class="border flex flex-col px-4 py-7 rounded items-center hover:border-red-600 transition-colors"
+              >
+                <span
+                  class="w-24 h-24 border border-red-500 rounded-full grid place-items-center relative"
+                >
+                  <span
+                    class="absolute -top-2 -right-2 w-24 h-24 bg-red-500 scale-90 rounded-full -z-1 bg-opacity-10"
+                  ></span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="40px"
+                    viewBox="0 -960 960 960"
+                    width="40px"
+                    class="fill-current text-red-700"
+                  >
+                    <path
+                      d="M0-360v-240h60v80h80v-80h60v240h-60v-100H60v100H0Zm310 0v-180h-70v-60h200v60h-70v180h-60Zm170 0v-200q0-17 11.5-28.5T520-600h180q17 0 28.5 11.5T740-560v200h-60v-180h-40v140h-60v-140h-40v180h-60Zm320 0v-240h60v180h100v60H800Z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="inline-flex h-8 px-5 mt-1 text-white bg-red-500 items-center rounded"
+                  >HTML</span
+                >
+              </a>
+            </div>
+
+            <div class="col-span-2">
+              <a
+                href=""
+                class="border flex flex-col px-4 py-7 rounded items-center hover:border-yellow-600 transition-colors"
+              >
+                <span
+                  class="w-24 h-24 border border-yellow-500 rounded-full grid place-items-center relative"
+                >
+                  <span
+                    class="absolute -top-2 -right-2 w-24 h-24 bg-yellow-500 scale-90 rounded-full -z-1 bg-opacity-10"
+                  ></span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="40px"
+                    viewBox="0 -960 960 960"
+                    width="40px"
+                    class="fill-current text-yellow-700"
+                  >
+                    <path
+                      d="M0-360v-240h60v80h80v-80h60v240h-60v-100H60v100H0Zm310 0v-180h-70v-60h200v60h-70v180h-60Zm170 0v-200q0-17 11.5-28.5T520-600h180q17 0 28.5 11.5T740-560v200h-60v-180h-40v140h-60v-140h-40v180h-60Zm320 0v-240h60v180h100v60H800Z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="inline-flex h-8 px-5 mt-1 text-white bg-yellow-500 items-center rounded"
+                  >HTML</span
+                >
+              </a>
+            </div>
+            <div class="col-span-2">
+              <a
+                href=""
+                class="border flex flex-col px-4 py-7 rounded items-center hover:border-green-600 transition-colors"
+              >
+                <span
+                  class="w-24 h-24 border border-green-500 rounded-full grid place-items-center relative"
+                >
+                  <span
+                    class="absolute -top-2 -right-2 w-24 h-24 bg-green-500 scale-90 rounded-full -z-1 bg-opacity-10"
+                  ></span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="40px"
+                    viewBox="0 -960 960 960"
+                    width="40px"
+                    class="fill-current text-green-700"
+                  >
+                    <path
+                      d="M0-360v-240h60v80h80v-80h60v240h-60v-100H60v100H0Zm310 0v-180h-70v-60h200v60h-70v180h-60Zm170 0v-200q0-17 11.5-28.5T520-600h180q17 0 28.5 11.5T740-560v200h-60v-180h-40v140h-60v-140h-40v180h-60Zm320 0v-240h60v180h100v60H800Z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="inline-flex h-8 px-5 mt-1 text-white bg-green-500 items-center rounded"
+                  >HTML</span
+                >
+              </a>
+            </div>
+            <div class="col-span-2">
+              <a
+                href=""
+                class="border flex flex-col px-4 py-7 rounded items-center hover:border-orange-600 transition-colors"
+              >
+                <span
+                  class="w-24 h-24 border border-orange-500 rounded-full grid place-items-center relative"
+                >
+                  <span
+                    class="absolute -top-2 -right-2 w-24 h-24 bg-orange-500 scale-90 rounded-full -z-1 bg-opacity-10"
+                  ></span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="40px"
+                    viewBox="0 -960 960 960"
+                    width="40px"
+                    class="fill-current text-orange-700"
+                  >
+                    <path
+                      d="M0-360v-240h60v80h80v-80h60v240h-60v-100H60v100H0Zm310 0v-180h-70v-60h200v60h-70v180h-60Zm170 0v-200q0-17 11.5-28.5T520-600h180q17 0 28.5 11.5T740-560v200h-60v-180h-40v140h-60v-140h-40v180h-60Zm320 0v-240h60v180h100v60H800Z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="inline-flex h-8 px-5 mt-1 text-white bg-orange-500 items-center rounded"
+                  >HTML</span
+                >
+              </a>
+            </div>
+            <div class="col-span-2">
+              <a
+                href=""
+                class="border flex flex-col px-4 py-7 rounded items-center hover:border-blue-600 transition-colors"
+              >
+                <span
+                  class="w-24 h-24 border border-blue-500 rounded-full grid place-items-center relative"
+                >
+                  <span
+                    class="absolute -top-2 -right-2 w-24 h-24 bg-blue-500 scale-90 rounded-full -z-1 bg-opacity-10"
+                  ></span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="40px"
+                    viewBox="0 -960 960 960"
+                    width="40px"
+                    class="fill-current text-blue-700"
+                  >
+                    <path
+                      d="M0-360v-240h60v80h80v-80h60v240h-60v-100H60v100H0Zm310 0v-180h-70v-60h200v60h-70v180h-60Zm170 0v-200q0-17 11.5-28.5T520-600h180q17 0 28.5 11.5T740-560v200h-60v-180h-40v140h-60v-140h-40v180h-60Zm320 0v-240h60v180h100v60H800Z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="inline-flex h-8 px-5 mt-1 text-white bg-blue-500 items-center rounded"
+                  >HTML</span
+                >
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-twitter p-7 rounded-lg text-white">
+            <h6>Twitter hesabını takip etmeyi unutma!</h6>
+            <a href="" class="">Takip</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
