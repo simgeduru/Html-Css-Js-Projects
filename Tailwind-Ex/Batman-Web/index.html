@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            screens: {
+              lg: "1140px",
+              xl: "1140px",
+              "2xl": "1140px",
+            },
+          },
+          extend: {
+            colors: {
+              "gega-red": "#BC1A45",
+              "gega-melon": "#FFD369",
+              "gega-grey": "#DDDDDD",
+              "gega-white": "#F7F7F7",
+            },
+            fontFamily: {
+              gemunu: ["Gemunu Libre", "sans-serif"],
+              open: ["Open Sans", "sans-serif"],
+            },
+            spacing: {
+              128: "32rem",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="bg-black py-6 lg:py-12 text-gega-grey font-gemunu uppercase">
+      <div
+        class="container flex items-center justify-between space-x-8 lg:space-x-16"
+      >
+        <a
+          href="#"
+          class="pl-4 lg:pl-0 taxt-4xl lg:text-6xl font-bold text-gega-grey text-transparent bg-gradient-to-r bg-clip-text from-gega-red to-gega-grey"
+          >GEGA</a
+        >
+        <div class="block md:hidden">
+          <div class="space-y-1 cursor-pointer pr-4">
+            <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
+            <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
+            <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
+          </div>
+        </div>
+        <nav class="hidden md:flex flex justify-between flex-1">
+          <div class="flex items-center lg:text-lg space-x-4 lg:space-x-8">
+            <a href="#" class="hover:text-gega-melon transition duration-500"
+              >movies</a
+            >
+            <a href="#" class="hover:text-gega-melon transition duration-500"
+              >celebrities</a
+            ><a href="#" class="hover:text-gega-melon transition duration-500"
+              >blog</a
+            ><a href="#" class="hover:text-gega-melon transition duration-500"
+              >news</a
+            ><a href="#" class="hover:text-gega-melon transition duration-500"
+              >about</a
+            >
+          </div>
+
+          <div class="flex items-center space-x-4 lg:space-x-8">
+            <form action="">
+              <div class="group border-r px-4 mx-4 py-1 border-gega-red">
+                <input
+                  type="text"
+                  class="group-hover:opacity-100 opacity-0 border-b bg-transparent border-gega-red focus:outline-none transition duration-500 w-24 lg:w-44"
+                />
+                <button class="-ml-4 group-hover:ml-0 transition duration-500">
+                  <i
+                    class="fas fa-search group-hover:text-gega-red transition duration-500"
+                  ></i>
+                </button>
+              </div>
+            </form>
+            <div class="flex items-center space-x-4 lg:space-x-8 lg:text-lg">
+              <a href="#">Login</a>
+              <a
+                href="#"
+                class="whitespace-nowrap bg-gega-red px-3 py-1 hover:bg-rose-600 hover:text-gega-grey cursor-pointer transition duration-500"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section
+      class="h-64 md:h-96 lg:h-128 group relative font-gemunu uppercase text-gega-grey"
+    >
+      <img src="batman.jpg" alt="" class="w-full h-full object-cover" />
+
+      <div
+        class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-black"
+      >
+        <div class="container pl-10 lg:0">
+          <h3
+            class="text-gega-melon tracking-wider group-hover:mb-1 duration-500"
+          >
+            ACTION, DRAMA, THRILLER
+          </h3>
+          <h1
+            class="text-4xl lg:text-6xl text-gega-grey group-hover:mb-1 duration-500"
+          >
+            the dark knight
+          </h1>
+          <p
+            class="text-sm lg:text-base text-gega-grey group-hover:mb-2 duration-500 w-3/4 lg:w-2/3"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            repudiandae ullam laboriosam et itaque enim distinctio ipsam ea
+            praesentium amet.
+          </p>
+          <div
+            class="flex space-x-8 opacity-0 group-hover:opacity-100 group-hover:mb-10 lg:group-hover:mb-20 duration-1000"
+          >
+            <div class="flex space-x-2 items-center cursor-pointer">
+              <a
+                href="#"
+                class="text-gega-grey uppercase lg:text-lg hover:text-gega-red duration-500"
+              >
+                watch trailer
+              </a>
+              <div
+                class="items-center flex h-8 w-8 text-center justify-center bg-gega-red rounded-full text-gega-grey"
+              >
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="flex space-x-2 items-center cursor-pointer">
+              <a
+                href="#"
+                class="text-gega-grey uppercase lg:text-lg hover:text-gega-red duration-500"
+              >
+                Full synopsis
+              </a>
+              <div
+                class="items-center flex h-8 w-8 text-center justify-center bg-gega-red rounded-full text-gega-grey"
+              >
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex space-x-3 absolute bottom-5 left-10 opacity-0 group-hover:opacity-100 duration-1000"
+      >
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gega-red"></div>
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gega-grey"></div>
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gega-grey"></div>
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gega-grey"></div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-black text-gega-grey font-gemunu uppercase">
+      <div
+        class="container flex lg:space-x-16 space-y-8 lg:space-y-0 flex-col lg:flex-row"
+      >
+        <div class="basis-2/3">
+          <div
+            class="flex space-x-2 divide-x divide-gega-red divide-opacity-50 mb-8 pl-10 lg:pl-0"
+          >
+            <h2 class="text-2xl text-gega-red tracking-wider">
+              <a href="#">Latest</a>
+            </h2>
+            <h2
+              class="text-2xl text-gega-grey tracking-wider pl-2 hover:text-gega-red duration-500"
+            >
+              <a href="#">Popular</a>
+            </h2>
+            <h2
+              class="text-2xl text-gega-grey tracking-wider pl-2 hover:text-gega-red duration-500"
+            >
+              <a href="#">Best</a>
+            </h2>
+          </div>
+
+          <div class="flex flex-wrap">
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
+              <img
+                src="./mv1.jpg"
+                class="group-hover:scale-110 group-hover:opacity-50 duration-500"
+              />
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500"
+                >
+                  OBLIVION
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gega-grey"
+                >
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vero, perferendis.
+                </p>
+                <div
+                  class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a class="hover:text-gega-red" href="#"
+                    ><i class="fa-solid fa-play"></i
+                  ></a>
+                  <a class="hover:text-gega-red" href="#"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
+              <img
+                src="./mv1.jpg"
+                class="group-hover:scale-110 group-hover:opacity-50 duration-500"
+              />
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500"
+                >
+                  OBLIVION
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gega-grey"
+                >
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vero, perferendis.
+                </p>
+                <div
+                  class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a class="hover:text-gega-red" href="#"
+                    ><i class="fa-solid fa-play"></i
+                  ></a>
+                  <a class="hover:text-gega-red" href="#"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
+              <img
+                src="./mv1.jpg"
+                class="group-hover:scale-110 group-hover:opacity-50 duration-500"
+              />
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500"
+                >
+                  OBLIVION
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gega-grey"
+                >
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vero, perferendis.
+                </p>
+                <div
+                  class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a class="hover:text-gega-red" href="#"
+                    ><i class="fa-solid fa-play"></i
+                  ></a>
+                  <a class="hover:text-gega-red" href="#"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
+              <img
+                src="./mv1.jpg"
+                class="group-hover:scale-110 group-hover:opacity-50 duration-500"
+              />
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500"
+                >
+                  OBLIVION
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gega-grey"
+                >
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vero, perferendis.
+                </p>
+                <div
+                  class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a class="hover:text-gega-red" href="#"
+                    ><i class="fa-solid fa-play"></i
+                  ></a>
+                  <a class="hover:text-gega-red" href="#"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
+              <img
+                src="./mv1.jpg"
+                class="group-hover:scale-110 group-hover:opacity-50 duration-500"
+              />
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500"
+                >
+                  OBLIVION
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gega-grey"
+                >
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vero, perferendis.
+                </p>
+                <div
+                  class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a class="hover:text-gega-red" href="#"
+                    ><i class="fa-solid fa-play"></i
+                  ></a>
+                  <a class="hover:text-gega-red" href="#"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
+              <img
+                src="./mv1.jpg"
+                class="group-hover:scale-110 group-hover:opacity-50 duration-500"
+              />
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500"
+                >
+                  OBLIVION
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gega-grey"
+                >
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vero, perferendis.
+                </p>
+                <div
+                  class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a class="hover:text-gega-red" href="#"
+                    ><i class="fa-solid fa-play"></i
+                  ></a>
+                  <a class="hover:text-gega-red" href="#"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3 hidden md:flex lg:hidden"
+            >
+              <img
+                src="./mv1.jpg"
+                class="group-hover:scale-110 group-hover:opacity-50 duration-500"
+              />
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500"
+                >
+                  OBLIVION
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gega-grey"
+                >
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vero, perferendis.
+                </p>
+                <div
+                  class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a class="hover:text-gega-red" href="#"
+                    ><i class="fa-solid fa-play"></i
+                  ></a>
+                  <a class="hover:text-gega-red" href="#"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3 hidden md:flex lg:hidden"
+            >
+              <img
+                src="./mv1.jpg"
+                class="group-hover:scale-110 group-hover:opacity-50 duration-500"
+              />
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500"
+                >
+                  OBLIVION
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gega-grey"
+                >
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vero, perferendis.
+                </p>
+                <div
+                  class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a class="hover:text-gega-red" href="#"
+                    ><i class="fa-solid fa-play"></i
+                  ></a>
+                  <a class="hover:text-gega-red" href="#"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="basis-1/3 pl-10 lg:pl-0">
+          <h2 class="text-gega-grey mb-8">HOT NEWS</h2>
+
+          <div
+            class="flex flex-row lg:flex-col lg:h-full justify-start lg:justify-between space-y-4 lg:pb-16 flex-wrap lg:flax-nowrap space-y-4"
+          >
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <div class="basis-1/3 h-full">
+                <img src="./new1.jpg" class="h-full w-full object-cover" />
+              </div>
+
+              <div
+                class="pl-8 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500"
+              >
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe, mollitia?
+                </p>
+                <p class="text-xs tracking-thighter mt-3 font-bold font-gemunu">
+                  ON NOW 01 2022
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <div class="basis-1/3 h-full">
+                <img src="./new1.jpg" class="h-full w-full object-cover" />
+              </div>
+
+              <div
+                class="pl-8 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500"
+              >
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe, mollitia?
+                </p>
+                <p class="text-xs tracking-thighter mt-3 font-bold font-gemunu">
+                  ON NOW 01 2022
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <div class="basis-1/3 h-full">
+                <img src="./new1.jpg" class="h-full w-full object-cover" />
+              </div>
+
+              <div
+                class="pl-8 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500"
+              >
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe, mollitia?
+                </p>
+                <p class="text-xs tracking-thighter mt-3 font-bold font-gemunu">
+                  ON NOW 01 2022
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <div class="basis-1/3 h-full">
+                <img src="./new1.jpg" class="h-full w-full object-cover" />
+              </div>
+
+              <div
+                class="pl-8 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500"
+              >
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe, mollitia?
+                </p>
+                <p class="text-xs tracking-thighter mt-3 font-bold font-gemunu">
+                  ON NOW 01 2022
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center group basis-3/4 md:basis-1/2 lg:flex md:hidden"
+            >
+              <div class="basis-1/3 h-full">
+                <img src="./new1.jpg" class="h-full w-full object-cover" />
+              </div>
+
+              <div
+                class="pl-8 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500"
+              >
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe, mollitia?
+                </p>
+                <p class="text-xs tracking-thighter mt-3 font-bold font-gemunu">
+                  ON NOW 01 2022
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
