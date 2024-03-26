@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let w = parseInt(prompt("enter the w"));
+      let h = parseInt(prompt("enter the h"));
+
+      function Cevre() {
+        let cevre = 2 * (w + h);
+        document.write("Cevre :" + cevre);
+      }
+
+      function Alan() {
+        let alan = w * h;
+        document.write("Alan :" + alan);
+      }
+    </script>
+
+    <button id="button1" onclick="Cevre()">Çevre</button>
+    <button id="button2" onclick="Alan()">Alan</button>
+  </body>
+</html>
