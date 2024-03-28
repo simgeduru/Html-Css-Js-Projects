@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+          fontFamily: {
+            meetFont: ["Red Hat Display", "sans-serif"],
+          },
+          screens: {
+            gs4: { min: "712px", max: "767px" },
+            // => @media (min-width: 640px and max-width: 767px) { ... }
+          },
+          gridAutoColumns: {
+            row4col: "minmax(3, 1fr)",
+          },
+        },
+      },
+    };
+  </script>
+  <!-- utilities -->
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+      :root {
+        font-family: "meetFont";
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    }
+  </style>
+  <body class="h-full relative overflow-x-hidden">
+    <div id="container " class="mt-5 flex flex-col justify-center">
+      <div
+        class="headingAndContent px-10 flex flex-col items-center space-y-40 lg:space-y-20 xl:space-y-5"
+      >
+        <h2 class="text-[32px] font-bold mb-8">meet</h2>
+
+        <!-- PADDİNGLİ CONTENT -->
+
+        <div class="sectionOne flex flex-col items-center relative lg:px-[35%]">
+          <div
+            class="font-black text-[40px] text-[#28283D] text-center leading-10 px-5 mt-8 md:mt-40 gs4:mt-28 lg:mt-0 2xl:mt-[110px]"
+          >
+            Group Chat for Everyone
+          </div>
+
+          <div class="font-medium text-[16px] text-[#87879D] text-center mt-8">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </div>
+          <div
+            class="flex flex-col items-center lg:flex-row lg:space-x-10 lg:mt-10 lg:mb-[60%] 2xl:mb-[45%]"
+          >
+            <div
+              id="btnGreen"
+              class="font-black text-[16px] text-[#FFFFFF] text-center mt-8 bg-[#4D96A9] rounded-full w-[180px] py-4 lg:m-0"
+            >
+              Download
+              <span class="font-black text-[16px] text-[#8FE3F9]">v1.3</span>
+            </div>
+            <div
+              id="btnPurple"
+              class="font-black text-[16px] text-[#FFFFFF] text-center mt-5 bg-[#855FB1] rounded-full w-[140px] py-4 mb-36 lg:m-0"
+            >
+              What is it?
+            </div>
+          </div>
+
+          <img
+            src="01.png"
+            class="absolute -bottom-[100px] lg:-bottom-[35px] xl:bottom-[70px]"
+          />
+        </div>
+
+        <div class="sectionTwo flex flex-col items-center relative">
+          <div
+            id="images"
+            class="grid grid-cols-2 scale-125 md:grid-flow-col md:auto-cols-row4col gap-4 place-content-stretch h-48 mb-[65%] md:mb-[40%] lg:mb-[10%]"
+          >
+            <div><img src="Bitmap1.png" /></div>
+            <div><img src="Bitmap2.png" /></div>
+            <div><img src="Bitmap3.png" /></div>
+            <div><img src="Bitmap4.png" /></div>
+          </div>
+          <p class="font-black text-[16px] text-[#4D96A9] tracking-widest">
+            BUILT FOR MODERN USE
+          </p>
+          <p
+            class="font-black text-[32px] text-[#28283D] text-center leading-9 px-5 mt-5 lg:px-[34%]"
+          >
+            Smarter meetings, all in one place
+          </p>
+          <div
+            class="font-medium text-[16px] text-[#87879D] text-center mt-8 lg:px-[25%]"
+          >
+            Send messages, share files, show your screen, and record your
+            meetings — all in one workspace. Control who can join with
+            invite-only team access, data encryption, and data export.
+          </div>
+          <img src="02.png" class="absolute -bottom-[220px]" />
+        </div>
+      </div>
+
+      <div class="footer bg-[#4D96A9] mt-48 py-16 px-6">
+        <div
+          class="contentFooter px-10 flex flex-col justify-center lg:flex-row lg: lg:space-x-20 lg:items-center"
+        >
+          <p
+            class="font-black text-[32px] text-[#FAFAFA] text-center leading-9 mt-8"
+          >
+            Experience more together
+          </p>
+          <p class="font-medium text-[18px] text-[#FAFAFA] text-center mt-8">
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
+          </p>
+          <div
+            id="btnPurple"
+            class="font-black text-[16px] text-[#FFFFFF] text-center self-center mt-8 bg-[#855FB1] rounded-full w-[180px] py-4"
+          >
+            Download
+            <span class="font-black text-[16px] text-[#D9B8FF]">v1.3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src="Group 4.png" class="absolute top-16 w-full lg:hidden" />
+    <img
+      src="sol.png"
+      class="absolute hidden lg:block lg:left-[2%] lg:top-[30%] scale-[175%] xl:left-[4%] 2xl:scale-[300%] 2xl:top-[20%] 2xl:left-[7%]"
+    />
+    <img
+      src="sag.png"
+      class="absolute hidden lg:block lg:right-[5%] lg:top-[30%] scale-[175%] xl:right-[10%] 2xl:scale-[300%] 2xl:top-[20%]"
+    />
+
+    <img
+      src="mor-mavi.png"
+      class="absolute top-2 left-[34%] gs4:left-[41%] md:left-[42%] lg:left-[44%] xl:left-[46%] 2xl:left-[47.5%]"
+    />
+  </body>
+</html>
